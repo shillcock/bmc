@@ -23,7 +23,7 @@ gem "sinatra", ">= 1.3.0", :require => false
 gem "turbolinks", ">= 2.5.2"
 
 group :production, :staging do
-  gem "unicorn"
+  gem "puma"
   gem "rails_12factor"
 end
 
