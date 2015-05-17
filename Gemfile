@@ -22,6 +22,7 @@ gem "turbolinks", ">= 2.5.2"
 
 group :production, :staging do
   gem "unicorn"
+  gem "rails_12factor"
 end
 
 group :development do
@@ -64,3 +65,4 @@ group :test do
   gem "shoulda"
   gem "test_after_commit"
 end
+
