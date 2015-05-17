@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+ruby '2.2.2'
+
 gem "active_type", ">= 0.3.2"
 gem "autoprefixer-rails", ">= 5.0.0.1"
 gem "bcrypt", "~> 3.1.7"
@@ -21,8 +23,8 @@ gem "sinatra", ">= 1.3.0", :require => false
 gem "turbolinks", ">= 2.5.2"
 
 group :production, :staging do
+  gem "puma"
   gem "rails_12factor"
-  gem "unicorn"
 end
 
 group :development do
